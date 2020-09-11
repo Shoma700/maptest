@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 Route::get('/','MapController@topPage');
+Route::post('/','MapController@topPage');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
